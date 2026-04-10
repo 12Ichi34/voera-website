@@ -176,7 +176,7 @@ nav {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--coral);
+  color: var(--teal);
 }
 
 .hero-sub {
@@ -198,7 +198,7 @@ nav {
   font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
-  background: var(--teal);
+  background: var(--coral);
   color: var(--white);
   padding: 13px 28px;
   border-radius: 7px;
@@ -208,7 +208,7 @@ nav {
 }
 
 .btn-hero-primary:hover {
-  background: var(--teal-light);
+  background: var(--coral-light);
   transform: translateY(-1px);
 }
 
