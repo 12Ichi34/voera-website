@@ -1,379 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voera — Research Institute & Venture Creation</title>
-  <meta name="description" content="Voera is a research institute focused on innovation, venture creation, and international collaboration. Based in Kanazawa, Japan." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
- </head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voera — Ventures of the New Era</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="vstyles.css">
+</head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#">
-      <img src="logo/blue_no_bg.png" alt="Voera" height="95" style="display: block;" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#cycle">Model</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#contact" class="nav-cta">Get in touch</a>
-  </nav>
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#">
+    <img src="logo/white_no_bg.png" alt="Voera" height="95" style="display: block;" />
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#japan">Japan</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#partners">Partners</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get in Touch</a>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-glow-2"></div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-eyebrow">Research Institute · Kanazawa, Japan</div>
-      <h1>Where research<br>becomes a <em>venture.</em></h1>
-      <p class="hero-sub">Voera connects universities, corporations, and entrepreneurs to transform research insights and emerging opportunities into real businesses.</p>
-      <div class="hero-actions">
-        <a href="#about" class="btn-hero-primary">Our approach</a>
-        <a href="#contact" class="btn-hero-secondary">Work with us</a>
+      <div class="section-tag">Japan-Based Venture Studio</div>
+      <h1 class="hero-title">Ventures<br>of the <em>New Era</em></h1>
+      <p class="hero-sub">Your research-backed landing pad for companies entering, building, and transforming in Japan. From idea to scale — we walk with you every step.</p>
+      <div class="hero-ctas">
+        <a href="#services" class="btn-primary">Explore Services</a>
+        <a href="#contact" class="btn-ghost">Start a Conversation</a>
       </div>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-value">3</span>
-        <span class="stat-label">Integrated roles</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-value">3</span>
-        <span class="stat-label">Continents</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-value">1</span>
-        <span class="stat-label">Mission</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-inner">
-      <div class="about-left">
-        <div class="section-tag">What we do</div>
-        <h2 class="section-title">Research, consulting,<br>and execution — unified.</h2>
-        <p class="section-body">Voera is a research institute and venture creation platform. We operate at the intersection of knowledge and action, 
-          bridging academic institutions and entrepreneurial ecosystems across Asia, Europe, and the United States.</p>
-      </div>
-      <div class="about-right">
-        <div class="about-pillars">
-          <div class="pillar">
-            <div class="pillar-num">01</div>
-            <div class="pillar-content">
-              <h4>Research</h4>
-              <p>We analyze emerging technologies, market opportunities, and innovation ecosystems to identify where new ventures can be built.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-num">02</div>
-            <div class="pillar-content">
-              <h4>Consulting</h4>
-              <p>We support universities, corporations, and institutions in developing innovation strategies, international collaborations, and venture programs.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-num">03</div>
-            <div class="pillar-content">
-              <h4>Execution</h4>
-              <p>We design and launch ventures, innovation initiatives, and collaborative projects that emerge from research insights and partnerships.</p>
-            </div>
-          </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">4</div>
+          <div class="hero-stat-label">Core Services</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">20+</div>
+          <div class="hero-stat-label">Packages</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">JP</div>
+          <div class="hero-stat-label">Kanazawa Base</div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!--CYCLE-->
-  <section class="cycle" id="cycle">
-    <div class="cycle-inner">
-      <div class="cycle-header">
-        <div class="section-tag">Innovation cycle</div>
-        <h2 class="section-title">Teach. Grow. Invest.</h2>
-        <p class="section-body">Three stages that create a continuous cycle — where knowledge leads to ventures, and ventures generate new opportunities for research and collaboration.</p>
-      </div>
-      <div class="cycle-stages">
-        <div class="stage">
-          <div class="stage-num">01</div>
-          <div class="stage-name">Teach</div>
-          <div class="stage-focus">Research · Knowledge · Education</div>
-          <p class="stage-desc">We create and share knowledge through research, education, and knowledge transfer — building the intellectual foundation for new ventures.</p>
+      <div class="hero-visual">
+      <div class="japan-map-container">
+        <svg class="hero-japan-svg" viewBox="0 0 512 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Japan 4 main islands — correct aspect ratio 512x460 -->
+          <path d="M77.3,401.5L78.2,403.1L76.7,403.8L76.2,404.9L75.8,405.8L74.9,408.1L73.5,412.4L71.0,419.3L71.3,420.9L72.4,421.9L71.1,426.0L69.9,427.9L69.3,429.0L69.2,429.8L69.4,430.7L68.8,431.4L68.0,433.6L67.8,434.2L67.4,434.2L67.3,433.9L65.6,434.0L65.0,433.1L64.2,432.0L63.7,431.7L62.2,431.3L59.9,431.9L58.6,433.4L59.5,435.0L60.9,435.9L59.9,436.9L61.7,437.0L58.0,438.7L57.1,440.6L56.0,441.7L53.9,442.4L51.6,443.0L49.6,443.9L47.6,445.2L49.7,442.0L50.4,439.2L51.7,435.6L50.9,433.3L48.6,430.9L47.0,428.8L45.8,428.3L47.0,426.8L49.2,427.1L49.5,428.6L50.6,428.6L52.1,426.0L50.0,424.3L46.3,425.0L45.9,426.4L44.6,428.5L43.5,431.3L44.4,434.2L45.6,436.2L47.7,437.2L47.3,439.1L46.0,440.2L44.8,440.3L43.6,440.3L43.1,439.0L36.9,437.8L34.7,438.0L34.1,436.6L33.7,435.6L33.9,434.8L31.6,433.2L32.9,432.8L33.9,433.1L35.4,433.3L37.5,430.7L37.7,427.9L37.7,426.2L35.4,423.6L33.5,422.5L33.7,420.5L34.3,420.3L34.6,417.7L33.8,416.2L33.2,415.1L34.1,413.5L35.5,411.7L37.6,412.1L38.3,410.8L38.7,410.6L38.7,410.0L41.3,407.1L41.8,406.5L42.0,405.3L43.3,405.6L43.4,404.2L45.0,402.2L44.7,400.8L45.6,400.3L45.0,399.2L47.9,396.4L41.8,397.4L42.2,396.4L45.2,394.9L46.4,394.8L46.2,394.4L45.6,393.4L46.2,392.6L46.1,392.2L43.4,389.9L40.9,387.7L40.6,383.9L40.4,383.3L40.0,383.2L39.0,382.2L38.1,381.7L36.7,381.5L34.6,381.3L31.9,382.4L32.9,384.4L34.6,387.3L33.7,388.5L32.1,389.3L31.7,389.9L33.4,390.7L37.2,389.7L39.1,392.1L39.2,393.7L38.8,395.2L36.0,396.3L35.6,397.1L34.7,397.7L33.0,398.1L32.7,397.1L31.9,396.0L32.6,395.3L33.7,394.5L34.2,393.3L33.5,392.8L33.4,392.1L31.8,392.2L29.6,392.7L27.8,393.5L27.0,393.0L26.8,393.5L25.2,395.4L23.8,396.7L23.1,397.4L21.7,398.6L20.7,398.7L20.7,398.1L21.7,397.6L22.6,396.0L22.3,395.5L22.4,395.1L23.2,395.1L22.9,394.2L22.0,392.5L21.5,391.8L20.5,391.6L19.1,390.7L18.5,389.5L18.1,388.5L17.2,387.3L17.8,385.9L18.0,384.8L19.8,383.6L20.2,384.5L20.5,384.5L21.0,384.6L20.3,385.9L21.2,385.5L22.9,386.6L22.6,387.8L22.2,388.2L21.9,388.6L22.0,389.7L23.1,390.4L23.7,390.7L24.4,390.1L27.7,390.7L26.1,388.1L26.5,386.1L24.6,384.1L22.9,384.7L21.8,383.9L20.6,384.0L20.4,383.0L20.6,382.3L20.6,381.8L19.8,381.7L19.6,381.8L19.1,382.6L18.2,383.0L18.8,381.8L18.1,381.1L17.9,380.5L17.4,380.3L16.2,379.8L14.8,379.3L15.5,377.8L15.9,377.4L15.5,375.7L16.9,375.3L18.6,374.4L20.5,375.2L22.6,376.2L23.3,377.5L23.4,376.6L24.3,374.8L22.7,373.4L22.1,372.1L23.2,372.2L24.0,373.0L23.5,371.7L23.7,369.6L25.4,369.8L26.8,371.1L26.7,371.9L27.1,372.3L28.6,372.8L29.4,371.6L31.2,370.8L31.9,370.6L33.1,370.2L31.9,370.0L31.3,369.4L30.9,369.0L31.6,368.5L32.7,368.0L33.2,367.3L34.0,367.2L34.6,366.4L34.8,367.2L35.6,368.0L36.0,368.5L36.7,369.0L37.1,368.6L38.7,368.3L39.9,367.7L40.0,366.5L38.8,366.8L37.7,366.6L36.8,366.3L37.1,365.6L38.3,366.3L40.4,365.1L41.5,364.4L41.9,362.9L41.4,362.2L42.1,361.7L42.8,360.8L44.1,360.2L44.8,359.8L47.5,359.4L49.0,358.2L50.5,358.0L52.4,358.7L53.9,358.9L55.2,359.6L56.2,358.2L58.3,357.6L57.8,358.8L57.8,359.7L57.4,360.4L57.1,361.0L56.6,361.8L57.9,361.9L58.0,363.9L59.6,366.6L61.3,367.4L64.3,368.0L67.3,368.8L70.3,368.5L72.1,366.6L74.1,365.8L75.7,365.9L77.5,366.2L79.4,368.8L79.4,370.8L78.8,373.2L77.7,373.6L76.6,374.1L75.8,375.1L74.8,375.7L73.5,375.1L72.9,377.9L75.9,378.5L78.8,378.0L83.0,378.5L83.9,379.0L83.4,380.3L82.2,381.5L83.5,382.2L84.0,382.7L83.8,383.8L84.9,383.9L85.4,383.3L86.1,384.0L86.9,384.1L87.8,384.1L85.8,384.6L84.6,385.6L85.4,387.2L86.5,387.5L87.1,387.7L87.7,387.8L88.4,387.4L89.9,388.0L88.1,388.2L87.0,389.5L87.1,390.3L86.3,390.8L87.3,391.0L86.8,391.9L85.3,392.6L83.6,393.8L83.4,394.2L83.1,394.9L82.5,394.9L81.5,395.4L80.6,396.4L80.6,396.7L79.9,398.0L78.7,398.3L78.0,399.8L78.9,400.5L79.0,401.6L77.3,401.5L77.3,401.5Z M167.1,361.4L168.9,361.2L166.4,362.3L164.7,363.3L162.9,364.3L158.6,366.6L157.4,368.2L156.7,368.9L156.0,369.5L154.8,370.9L152.8,375.9L152.3,377.9L151.3,378.0L149.8,377.3L147.9,374.6L145.7,373.1L142.4,371.2L136.9,370.3L133.2,371.6L130.5,373.7L128.6,374.4L127.6,374.6L126.6,375.6L126.3,374.9L124.6,376.3L124.6,377.5L124.9,378.0L125.0,378.5L124.7,378.8L123.7,380.2L123.7,381.3L122.7,381.1L120.2,384.2L119.9,385.3L118.6,384.8L116.9,387.5L116.7,390.1L115.8,390.9L116.3,392.1L117.5,393.2L117.1,394.5L116.2,393.9L115.2,392.8L113.5,393.3L112.4,393.1L110.8,393.7L109.0,392.7L106.0,393.3L106.5,391.2L108.3,389.0L106.0,388.8L103.9,387.9L103.3,388.0L102.9,388.7L102.8,389.3L101.4,387.9L102.1,386.4L101.4,384.8L99.1,385.5L99.1,384.3L101.4,384.3L101.3,383.5L100.7,382.8L101.5,382.6L101.9,382.0L100.4,381.8L101.0,380.8L99.9,380.1L99.1,379.9L101.0,379.9L101.8,381.0L102.6,379.7L103.3,378.8L102.9,378.2L102.0,378.0L102.3,377.0L101.8,376.6L98.9,376.6L99.0,376.1L99.8,375.7L99.0,374.9L99.5,373.4L99.4,373.0L98.7,372.2L97.3,372.3L95.6,372.7L92.7,373.9L91.3,375.2L90.6,374.5L87.7,375.6L90.2,373.9L92.3,373.5L92.5,372.8L94.5,372.2L99.6,370.1L100.5,369.0L102.2,367.5L106.5,365.5L108.0,362.7L108.3,360.0L109.8,358.3L111.1,356.0L114.6,354.3L114.8,353.0L114.0,352.7L115.3,352.2L116.0,352.9L118.8,356.6L119.6,357.8L121.4,358.4L124.2,357.6L125.9,356.9L127.7,356.9L131.4,357.3L133.3,356.9L134.4,355.7L136.0,354.0L136.0,350.9L134.9,349.7L133.6,348.6L135.9,349.4L137.8,349.5L140.2,347.8L143.2,346.3L144.1,345.4L145.1,345.2L146.3,345.6L147.3,346.0L149.1,346.0L150.1,345.7L150.4,344.8L151.4,345.2L151.6,346.7L153.0,346.0L154.4,346.4L155.5,348.2L156.8,348.9L158.4,348.9L159.0,349.7L161.3,349.7L164.3,349.5L164.5,349.6L165.3,349.4L165.3,350.1L165.3,350.8L165.3,351.1L165.2,351.9L164.6,353.1L164.5,354.5L164.3,355.5L164.8,356.4L165.5,356.0L167.3,357.8L167.5,358.7L167.0,359.7L165.8,360.7L167.9,361.0L167.1,361.2L167.1,361.4Z M129.5,343.1L126.7,346.4L125.0,346.8L125.4,346.2L126.4,345.5L124.7,345.0L124.9,343.9L123.3,345.6L123.0,346.6L122.5,348.0L121.8,347.6L120.7,348.1L119.3,348.6L119.3,346.9L120.4,345.9L120.4,347.0L122.0,345.8L121.0,345.0L120.1,344.9L119.6,345.9L114.4,347.0L112.2,347.1L110.4,348.2L110.3,348.8L109.8,349.5L106.8,350.4L105.7,350.1L105.3,349.9L105.0,350.3L103.5,350.3L103.2,349.1L102.3,347.8L102.5,347.0L102.9,346.4L102.7,345.9L101.1,346.0L98.7,345.5L94.0,349.3L94.5,350.7L94.1,352.4L93.3,354.4L92.8,357.6L91.4,358.2L92.1,360.6L90.5,362.0L88.6,363.0L89.4,361.9L90.0,361.5L90.7,360.9L90.0,359.9L87.2,358.9L85.7,357.8L84.2,357.2L82.4,356.5L82.2,357.4L80.8,356.8L82.1,355.5L79.7,354.7L77.8,355.1L75.7,355.5L75.3,355.2L75.4,356.3L74.7,356.8L74.5,356.4L74.1,356.3L72.9,356.0L71.6,355.5L71.6,356.2L71.2,356.5L71.1,356.9L70.4,356.8L70.1,356.7L69.4,356.8L69.6,355.4L68.3,356.7L65.8,358.5L64.9,358.3L64.3,358.1L63.9,357.9L63.5,358.2L62.9,358.3L62.5,357.4L62.4,357.0L59.9,355.2L56.8,357.2L55.2,358.9L54.2,358.2L55.1,357.1L55.3,356.0L55.1,354.8L54.0,354.0L53.6,353.0L54.8,352.0L55.5,350.9L55.1,349.7L54.5,348.6L54.0,347.8L54.5,346.5L55.1,345.9L56.2,345.7L58.1,345.2L57.8,344.7L56.2,344.6L55.9,344.3L57.0,343.3L57.8,344.0L58.8,344.2L60.0,343.7L61.7,344.1L62.9,345.4L62.9,344.2L63.5,343.7L65.2,343.4L65.6,344.2L64.5,344.0L64.0,345.0L64.5,345.1L67.3,344.7L70.0,343.8L71.3,341.8L71.4,340.8L73.6,339.6L74.3,338.1L75.4,338.1L75.4,336.8L77.2,337.0L77.9,336.3L81.2,336.0L83.2,335.2L83.6,333.8L85.1,333.0L88.0,330.7L89.2,330.1L91.3,327.9L94.4,325.7L96.8,324.8L98.6,323.0L99.3,321.9L102.1,319.8L103.7,318.9L106.3,318.0L107.3,316.2L107.3,314.9L105.9,313.9L107.6,313.4L109.6,313.3L108.9,312.7L110.4,312.4L113.0,311.5L116.1,311.4L117.4,310.7L118.6,309.7L119.7,309.3L120.6,309.4L122.6,309.7L123.8,309.6L124.1,310.0L125.5,309.6L126.3,310.0L125.0,310.4L124.6,311.2L125.8,312.5L128.3,313.2L130.1,312.1L134.2,310.9L144.0,311.4L151.8,310.8L155.0,309.9L157.1,309.1L158.9,308.3L162.6,306.8L167.2,307.0L170.8,307.1L172.3,307.2L173.3,307.5L174.7,307.3L175.1,306.7L177.2,306.2L178.8,304.8L182.5,304.1L184.1,304.8L185.3,306.3L184.6,306.9L183.5,308.2L181.9,309.9L182.4,310.6L183.3,309.4L184.2,309.9L183.8,310.2L185.2,311.5L186.3,311.6L185.7,312.9L186.1,313.2L187.3,312.3L188.2,311.7L186.3,310.8L188.2,310.1L189.2,309.5L189.9,309.3L190.6,310.1L190.5,311.1L191.0,311.2L191.5,311.0L192.0,312.1L193.4,312.0L194.8,310.9L196.0,311.0L194.7,312.3L197.8,312.1L198.5,310.9L196.8,310.5L198.5,310.0L199.8,310.9L200.7,310.7L200.1,309.6L201.2,309.7L201.3,309.2L200.9,308.4L200.7,307.6L202.0,308.4L203.6,308.7L205.1,308.1L204.9,307.3L205.1,305.9L205.4,304.8L206.9,304.8L207.2,306.2L207.2,306.8L208.2,306.6L208.4,305.8L208.7,304.7L208.6,303.1L207.4,301.8L205.8,299.6L204.7,297.8L206.0,296.3L207.2,293.8L209.5,291.1L209.6,289.5L211.8,289.2L216.2,286.2L224.9,277.4L228.6,270.7L228.2,269.6L228.7,268.0L227.6,266.0L227.5,263.7L226.7,263.0L225.8,263.0L226.4,261.0L227.1,260.0L227.4,258.6L229.2,256.3L232.7,255.6L237.7,254.0L243.2,251.9L246.0,252.4L246.2,253.6L245.2,254.4L243.5,254.5L242.6,256.1L243.5,257.3L242.6,258.5L240.5,258.5L237.7,260.3L236.6,261.3L235.0,261.6L234.3,260.6L233.9,260.7L233.1,261.5L232.5,263.3L231.7,264.1L231.9,265.3L233.6,265.0L235.7,265.8L237.0,264.5L237.2,268.4L235.2,271.2L238.0,273.6L241.4,274.6L245.5,274.4L247.3,272.5L248.0,271.0L248.9,269.4L255.8,267.8L265.2,264.1L268.1,262.3L272.5,262.0L281.6,256.2L283.7,253.2L287.4,249.7L289.7,243.8L296.6,239.4L298.8,239.0L303.9,236.5L307.7,232.7L309.5,224.3L312.6,218.5L317.0,214.7L320.3,207.2L321.0,204.7L321.5,202.4L322.5,199.6L325.1,196.0L326.3,186.6L325.3,183.7L322.2,181.5L320.2,182.3L317.4,182.7L316.5,181.4L316.2,179.9L315.6,178.3L319.2,179.6L323.9,174.8L324.6,171.9L325.2,167.9L323.4,166.5L322.9,164.3L322.5,162.0L320.9,161.2L321.0,159.9L322.7,158.6L324.1,157.2L326.6,155.8L328.1,156.4L330.4,155.2L332.2,154.9L333.7,150.7L334.0,148.8L334.6,148.7L335.5,149.2L335.5,148.2L336.3,148.0L336.3,147.7L334.9,147.7L334.4,147.5L334.1,146.7L332.9,145.3L331.8,144.9L333.5,144.8L334.4,143.2L334.4,141.8L334.7,141.0L336.1,141.7L338.2,143.4L340.1,142.3L343.3,143.1L343.3,145.4L343.4,146.7L344.5,151.9L348.2,153.6L350.3,151.3L350.2,150.6L349.8,150.5L349.7,150.1L350.0,149.7L350.4,149.2L351.3,148.6L352.6,149.1L353.6,150.0L353.5,150.3L353.6,150.7L355.2,151.2L356.2,151.5L356.9,152.3L358.5,152.4L360.9,149.2L361.5,145.9L362.0,145.1L362.2,143.3L360.3,141.0L358.7,141.0L358.2,141.6L358.8,141.3L358.8,141.5L357.0,142.6L355.2,143.3L353.5,143.0L351.4,143.7L350.1,144.0L348.2,145.0L347.2,143.0L347.6,141.4L348.3,139.3L348.9,138.0L349.8,136.1L351.2,134.6L351.2,133.3L351.6,132.6L353.1,133.7L354.3,134.4L357.4,135.1L359.5,136.8L361.1,137.9L364.5,138.1L366.9,136.8L367.9,136.2L367.9,136.9L367.7,137.2L367.4,138.0L366.7,139.6L366.1,142.3L366.0,145.0L365.9,146.1L365.7,150.8L366.7,157.0L368.5,161.5L369.9,162.7L371.2,162.4L372.6,163.6L375.5,166.2L376.5,167.5L377.1,168.8L378.0,169.9L378.9,172.1L378.2,172.8L379.4,173.5L379.8,174.7L379.1,176.4L381.7,178.4L382.5,179.2L382.5,180.1L382.4,181.2L383.0,181.9L383.9,185.1L384.0,185.6L383.6,186.3L383.2,188.5L382.6,190.0L384.9,189.2L384.7,189.8L384.7,190.8L385.8,191.6L385.7,192.2L385.3,192.6L382.8,194.1L383.7,194.9L384.9,193.8L385.2,194.5L384.9,195.5L383.8,195.9L383.0,196.1L382.7,197.0L381.0,198.3L382.8,198.0L382.7,198.9L381.7,199.7L381.1,200.0L380.8,200.7L382.2,200.7L380.9,202.1L380.6,202.6L380.7,203.4L379.7,204.0L380.6,205.5L379.6,205.9L379.3,206.4L378.6,206.7L379.5,207.3L376.9,207.4L375.7,207.5L376.3,208.5L375.3,208.9L375.8,209.6L374.6,209.3L374.5,208.5L373.1,208.5L374.0,211.9L373.4,212.0L373.0,211.3L372.5,211.5L371.5,211.9L371.6,213.3L369.9,214.6L370.1,215.3L371.1,216.5L370.6,216.9L370.1,216.9L368.7,217.7L367.9,218.3L369.9,218.8L369.5,219.9L368.5,221.2L369.8,221.5L370.4,222.9L369.7,223.2L369.0,223.8L369.1,224.3L368.5,224.7L368.3,225.4L368.6,226.1L370.1,226.0L369.6,226.2L369.7,227.1L370.2,228.8L369.5,229.7L368.1,229.0L367.9,228.5L367.7,228.0L367.2,226.7L366.3,226.6L365.3,226.3L363.2,225.7L359.5,226.8L359.2,228.2L358.1,226.7L357.3,226.9L356.1,227.5L355.9,228.5L356.6,228.8L356.0,229.3L353.8,231.6L351.7,237.5L352.2,241.0L354.3,244.7L354.8,245.9L354.4,247.1L354.9,247.9L355.2,257.2L354.4,260.7L353.8,264.7L352.0,269.2L350.0,270.0L348.6,270.6L348.3,271.6L346.8,273.8L343.5,281.0L342.6,284.7L342.8,287.0L341.3,289.8L343.7,296.7L349.5,304.7L350.2,304.9L350.3,306.0L349.4,305.8L347.4,306.0L344.1,306.3L337.1,312.1L336.8,317.8L336.2,320.9L334.3,322.0L333.5,322.7L332.0,322.7L329.1,323.2L327.5,324.4L325.1,325.6L323.8,327.0L323.4,328.4L322.3,329.4L320.7,329.5L319.7,329.5L319.3,328.6L317.3,328.0L317.6,327.4L318.8,327.4L319.8,327.0L320.7,326.7L319.6,325.9L320.1,325.0L319.6,323.8L319.2,321.6L320.1,320.3L320.0,318.6L318.1,317.4L319.3,317.0L319.9,315.5L321.8,315.1L322.8,313.6L324.7,312.7L326.6,310.6L327.5,309.9L326.9,308.8L325.5,307.7L324.0,306.9L322.7,307.8L321.3,308.2L320.5,308.0L319.7,308.5L318.8,307.8L317.8,308.4L317.3,308.0L318.1,309.9L318.2,311.5L316.9,312.3L314.6,312.8L314.5,313.5L315.1,314.3L314.1,314.5L314.4,315.5L314.1,317.5L314.6,317.8L316.6,318.8L316.5,319.9L316.5,320.6L314.5,321.4L315.2,322.5L313.9,322.6L313.0,322.5L312.7,320.7L312.8,320.0L311.7,318.5L311.0,317.6L309.3,317.8L304.7,317.7L300.3,318.9L299.6,322.6L297.1,324.5L297.9,325.8L297.9,327.4L299.3,329.5L297.8,331.0L297.1,332.4L296.1,333.6L295.2,334.2L294.8,335.1L294.5,336.6L294.1,337.2L291.8,337.7L289.5,338.5L288.1,337.1L288.0,336.3L287.4,335.8L287.6,334.5L287.7,333.1L287.8,331.2L287.6,330.3L288.6,329.5L287.9,328.0L288.5,325.9L291.2,326.1L290.5,324.4L287.3,322.7L284.1,323.3L280.9,325.2L280.3,327.0L281.0,326.2L278.0,328.3L275.7,329.5L275.0,331.0L274.9,332.4L272.6,334.4L271.0,337.3L272.4,338.5L266.6,336.9L259.1,337.4L251.8,336.3L239.8,338.9L236.5,339.2L236.5,338.6L237.7,336.6L238.9,337.8L239.7,337.2L241.4,336.4L244.0,334.7L244.4,335.8L244.8,334.8L244.8,334.5L245.1,333.4L243.5,332.5L241.7,332.5L241.2,333.5L240.3,333.2L238.6,333.1L237.1,333.3L235.7,332.6L234.4,331.7L235.0,328.9L233.8,330.8L233.1,333.3L234.5,334.6L234.0,335.6L231.3,334.4L231.2,333.0L231.6,331.5L230.5,330.5L230.3,328.5L231.0,327.0L232.0,325.4L231.8,323.9L231.0,324.9L230.8,325.7L229.6,325.3L228.2,325.9L226.1,326.7L225.2,327.8L225.1,328.4L225.2,329.3L222.7,332.6L221.4,335.5L221.7,336.8L222.1,337.4L222.3,338.5L224.7,338.8L226.0,339.9L230.1,341.9L231.2,341.9L231.8,342.8L232.5,343.5L233.3,343.8L232.8,345.0L231.9,345.4L232.5,345.8L232.3,346.4L232.6,347.4L232.2,348.6L230.2,349.0L228.9,348.2L230.5,348.4L230.8,348.2L231.3,347.6L229.9,347.2L229.9,347.6L228.4,347.6L226.9,347.1L226.0,346.7L225.7,347.5L224.0,348.5L222.8,348.2L222.6,348.6L221.3,348.6L221.2,349.5L218.6,350.0L215.9,350.9L215.1,352.8L215.2,353.5L214.6,353.9L213.7,353.2L212.8,353.9L212.9,354.3L213.4,355.1L214.1,356.0L214.0,357.2L213.0,356.9L212.0,357.2L212.9,357.9L212.1,358.5L210.7,358.9L210.0,359.6L208.0,360.9L205.7,365.8L204.7,367.4L204.8,368.4L202.8,369.9L200.3,371.0L199.7,372.5L198.8,373.1L199.0,371.7L190.9,369.9L188.1,368.7L187.9,367.6L187.3,366.9L186.0,366.1L188.2,365.2L185.8,363.7L184.1,362.8L182.1,361.8L179.8,359.5L178.1,359.9L178.0,359.3L178.6,358.8L179.3,357.7L178.6,357.0L180.1,356.4L181.1,355.2L179.6,354.4L179.8,353.3L180.2,353.0L180.7,352.2L181.6,351.4L180.3,349.6L178.1,348.4L182.5,346.2L185.8,343.6L187.4,341.3L188.1,340.5L188.6,339.1L188.3,336.8L187.6,336.1L185.7,335.4L183.8,336.3L183.5,337.0L181.8,336.3L178.7,337.7L175.7,337.3L173.6,336.3L170.4,334.7L167.3,333.3L163.1,333.5L162.6,333.6L162.0,333.8L161.2,333.4L160.8,333.2L160.6,333.8L160.2,333.8L158.8,334.8L158.0,334.4L157.1,335.1L154.9,335.1L152.9,334.8L154.9,335.6L153.9,335.8L153.0,336.7L151.7,337.2L151.7,337.6L151.9,338.1L149.1,339.1L147.5,338.3L145.3,338.8L144.6,339.7L146.2,338.9L147.7,338.7L147.7,340.0L146.9,340.6L146.2,340.7L144.8,343.0L141.5,343.4L139.8,341.9L138.7,341.3L138.3,340.9L136.9,341.2L134.4,342.2L133.9,342.7L133.0,343.0L132.1,342.6L131.6,341.8L129.8,342.3L129.5,343.1L129.5,343.1Z M495.5,78.1L497.2,78.5L496.1,78.8L494.9,79.7L493.0,80.3L491.4,80.4L490.7,81.1L489.5,82.2L488.9,83.6L488.1,84.6L486.1,84.1L481.7,84.4L479.6,85.4L476.4,86.0L476.7,87.0L477.4,87.4L475.9,87.8L475.0,88.5L473.4,88.9L473.2,89.9L469.8,90.1L468.0,89.0L467.4,88.2L466.8,88.2L466.0,88.7L465.2,89.4L465.1,90.6L466.3,91.5L458.5,91.2L454.7,90.8L454.0,90.2L453.3,89.4L444.3,91.7L432.4,99.6L423.8,109.7L423.4,114.1L423.3,116.0L421.3,119.6L420.1,121.2L418.6,120.0L416.9,118.4L400.0,111.8L390.4,107.0L383.2,104.1L380.5,102.3L373.0,100.9L361.9,105.3L360.2,106.1L359.2,106.3L354.7,109.8L353.5,110.3L352.6,110.0L352.3,109.3L353.8,109.1L352.0,108.4L351.2,106.7L344.2,102.0L339.4,102.0L335.8,104.2L333.1,108.8L334.0,112.2L340.2,115.9L342.6,115.7L345.7,115.2L349.3,118.5L351.4,119.8L354.5,122.3L356.6,122.7L360.1,125.1L357.8,125.7L354.3,127.7L348.9,126.0L345.5,126.7L345.9,125.6L345.5,124.4L343.5,124.7L342.4,127.0L340.0,128.1L337.4,129.7L336.4,133.6L331.7,135.3L330.7,136.9L328.3,136.4L327.1,136.5L325.6,135.7L324.0,132.2L324.6,130.0L327.0,125.1L328.0,125.0L328.4,123.8L328.2,123.2L328.8,122.8L329.0,121.7L328.6,120.1L326.3,116.8L321.8,114.5L321.1,113.4L318.5,112.2L317.6,110.0L319.4,107.3L320.0,103.9L320.9,99.5L325.6,98.8L327.6,97.3L328.5,97.0L330.0,95.2L331.8,96.3L333.5,96.4L334.0,94.7L335.7,92.7L339.4,90.1L339.8,88.6L339.0,87.1L335.4,84.1L335.2,79.9L337.9,79.5L338.3,78.6L339.3,78.7L340.4,79.2L344.3,81.8L347.4,83.1L348.5,83.8L354.5,82.8L354.3,83.8L356.2,84.5L358.8,85.3L360.1,85.3L365.2,82.1L367.2,78.8L365.2,74.8L365.3,72.9L364.9,70.9L364.2,68.4L365.6,66.1L367.4,65.2L369.8,64.6L373.1,61.7L374.0,57.9L376.3,47.3L377.4,37.2L371.5,25.4L371.6,22.6L372.6,21.5L373.4,20.1L373.0,18.3L373.9,16.9L374.5,17.6L375.0,18.3L378.6,17.7L380.1,17.0L380.2,15.9L382.2,14.8L383.4,16.4L385.5,18.3L390.4,21.4L402.5,33.7L410.7,40.7L414.7,43.4L420.1,46.8L422.2,48.2L424.4,49.5L425.5,50.5L436.5,54.5L433.7,54.7L435.0,56.5L435.9,56.6L441.0,57.0L442.6,56.0L447.6,56.4L447.8,56.9L446.2,59.0L448.0,59.1L448.9,57.9L450.3,56.4L451.0,58.4L452.0,59.2L453.1,60.5L455.8,61.6L466.4,62.2L473.8,56.6L477.7,54.2L480.1,51.8L482.2,49.9L482.8,49.7L483.8,51.2L481.3,55.3L480.4,57.8L476.4,62.4L476.0,64.6L474.9,66.2L474.9,67.2L478.5,71.1L479.4,72.6L480.0,73.8L481.3,77.5L484.4,80.5L480.7,79.3L480.6,80.1L482.1,80.6L482.3,81.3L486.6,82.0L488.2,82.4L487.4,81.5L490.0,79.6L491.5,79.1L492.0,78.5L494.2,78.3L495.0,77.9L495.4,78.0L495.5,78.1Z"
+            fill="rgba(43,174,186,0.15)"
+            stroke="rgba(43,174,186,0.85)"
+            stroke-width="1.2"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          />
+          <!-- Kanazawa marker (224.6, 280.4) -->
+          <circle cx="224.6" cy="280.4" r="6" fill="#2baeba" opacity="0.95"/>
+          <circle cx="224.6" cy="280.4" r="12" fill="rgba(43,174,186,0.2)"/>
+          <circle cx="224.6" cy="280.4" r="6" fill="none" stroke="rgba(43,174,186,0.6)" stroke-width="1">
+            <animate attributeName="r" values="6;26;6" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <line x1="224.6" y1="278" x2="210" y2="265" stroke="var(--teal)" stroke-width="1"/>
+          <line x1="190" y1="265" x2="210" y2="265" stroke="var(--teal)" stroke-width="1"/>
+          <text x="160" y="267" text-anchor="middle" font-family="Poppins,sans-serif" font-size="9" fill="var(--white)" font-weight="600">Kanazawa</text>
+        </svg>
+        <!-- Floating badge cards -->
+        <div class="map-badge map-badge-tl">
+          <div class="map-badge-label">Incubator</div>
+          <div class="map-badge-sub">Idea → Scale</div>
         </div>
-        <div class="stage">
-          <div class="stage-num">02</div>
-          <div class="stage-name">Grow</div>
-          <div class="stage-focus">Ventures · Incubation · Ecosystems</div>
-          <p class="stage-desc">We turn knowledge into action through venture creation, startup incubation, and ecosystem development — from idea to first traction.</p>
+        <div class="map-badge map-badge-tr">
+          <div class="map-badge-label">Country Manager</div>
+          <div class="map-badge-sub">Market Entry</div>
         </div>
-        <div class="stage">
-          <div class="stage-num">03</div>
-          <div class="stage-name">Invest</div>
-          <div class="stage-focus">Partnerships · Collaboration · Growth</div>
-          <p class="stage-desc">We support venture growth through strategic partnerships, international collaboration, and investment opportunities that unlock the next cycle.</p>
+        <div class="map-badge map-badge-bl">
+          <div class="map-badge-label">Events Manager</div>
+          <div class="map-badge-sub">College → Global</div>
         </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PARTNERS -->
-  <section class="partners" id="partners">
-    <div class="partners-inner">
-      <div class="partners-header">
-        <div>
-          <div class="section-tag">Who we work with</div>
-          <h2 class="section-title">Collaboration across<br>institutions and borders.</h2>
-        </div>
-        <div>
-          <p class="section-body">Voera acts as a bridge between research, industry, and entrepreneurship — connecting knowledge, talent, and resources across institutions and countries.</p>
-        </div>
-      </div>
-      <div class="partner-types">
-        <div class="partner-card">
-          <div class="partner-card-icon" style="background: rgba(43,174,186,0.15);">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="8" width="14" height="8" rx="1" stroke="#2baeba" stroke-width="1.5"/>
-              <path d="M6 8V5a3 3 0 016 0v3" stroke="#2baeba" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h4>Universities & Research Institutions</h4>
-          <p>Joint research, technology commercialization, and venture development programs with academic partners in Kanazawa and internationally.</p>
-        </div>
-        <div class="partner-card">
-          <div class="partner-card-icon" style="background: rgba(231,111,81,0.15);">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="11" rx="1" stroke="#e76f51" stroke-width="1.5"/>
-              <path d="M6 4V3M12 4V3" stroke="#e76f51" stroke-width="1.5" stroke-linecap="round"/><path d="M2 8h14" stroke="#e76f51" stroke-width="1.5"/></svg>
-          </div>
-          <h4>Corporations</h4>
-          <p>Innovation strategy, corporate venture labs, and digital transformation advisory for businesses seeking to engage with startup ecosystems.</p>
-        </div>
-        <div class="partner-card">
-          <div class="partner-card-icon" style="background: rgba(255,255,255,0.08);">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
-              <path d="M9 2c0 0 3 3 3 7s-3 7-3 7M9 2c0 0-3 3-3 7s3 7 3 7M2 9h14" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/></svg>
-          </div>
-          <h4>International Partners</h4>
-          <p>Market entry support and international venture collaboration across Asia, Europe, and the United States.</p>
-        </div>
-        <div class="partner-card">
-          <div class="partner-card-icon" style="background: rgba(43,174,186,0.12);">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="6" r="3" stroke="#2baeba" stroke-width="1.5"/>
-              <path d="M3 15c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="#2baeba" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h4>Entrepreneurs & Founders</h4>
-          <p>Startup bootcamps, incubation activities, and direct venture-building partnerships for founders working on research-driven ideas.</p>
+        <div class="map-badge map-badge-br">
+          <div class="map-badge-label">Summer Programs + More</div>
+          <div class="map-badge-sub">Support services</div>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
-  <section class="partners_logo" id="partners_logo">
-    <!-- PARTNER LOGOS -->
-    <!-- Add/remove .partner-logo-item divs to match your actual number of partners.
-          Place logo files in a folder called "logo/" next to index.html.
-          Update each src and alt accordingly. -->
-    <div class="partner-logos-wrap">
-      <p class="partner-logos-label">Our partners & collaborators</p>
-      <div class="partner-logos-track">
-        <div class="partner-logos">
-          <!-- SET 1 -->
-          <div class="partner-logo-item"><img src="logo/Whatnot.png" alt="Whatnot" /></div>
-          <div class="partner-logo-item"><img src="logo/CAMT.png" alt="CAMT" /></div>
-          <div class="partner-logo-item"><img src="logo/CMU.png" alt="CMU" /></div>
-          <div class="partner-logo-item"><img src="logo/KIT_logo.png" alt="KIT_logo" /></div>
-          <div class="partner-logo-item"><img src="logo/ICT.png" alt="ICT" /></div>
-          <div class="partner-logo-item"><img src="logo/KIT_ICT.jpg" alt="KIT_ICT" /></div>
-          <div class="partner-logo-item"><img src="logo/KIT_Eagle.jpg" alt="KIT_Eagle" /></div>
-          <div class="partner-logo-item"><img src="logo/KX.png" alt="KX" /></div>
-          <div class="partner-logo-item"><img src="logo/KMUTT.jpg" alt="KMUTT" /></div>
-          <div class="partner-logo-item"><img src="logo/Startup_weekend.png" alt="Startup_weekend" /></div>
-          <div class="partner-logo-item"><img src="logo/MU.png" alt="MU" /></div>
+<!-- PILLARS -->
+<section class="pillars" id="about">
+  <div class="section-header">
+    <div class="section-tag">What We Do</div>
+    <h2 class="section-title">Your Complete Japan<br>Venture Partner</h2>
+    <p class="section-sub">We remove the friction of building and growing in Japan — from first idea to full market ownership.</p>
+  </div>
+  <div class="pillars-grid" style="max-width:1200px;margin:0 auto;">
+    <div class="pillar-card">
+      <div class="pillar-icon">🚀</div>
+      <div class="pillar-num">01 · Incubator</div>
+      <div class="pillar-title">Build from Zero</div>
+      <p class="pillar-desc">Pre-incubation workshops, core incubation, accelerator tracks, and corporate venture programs — taking founders from idea to fundraising-ready.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-icon">🗾</div>
+      <div class="pillar-num">02 · Country Manager</div>
+      <div class="pillar-title">Own the Market</div>
+      <p class="pillar-desc">Acting as your boots on the ground in Japan. Market entry, business setup, GTM execution, operations, and full P&L ownership — all modular.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-icon">🎯</div>
+      <div class="pillar-num">03 · Event Management</div>
+      <div class="pillar-title">Activate Ecosystems</div>
+      <p class="pillar-desc">College hackathons to national innovation summits and global virtual pitch events — we design, produce, and run startup events end-to-end.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-icon">☀️</div>
+      <div class="pillar-num">04 · More</div>
+      <div class="pillar-title">Full Support Stack</div>
+      <p class="pillar-desc">Summer programs, legal arrangements, localization, recruitment services, and housing support. Everything a founder needs to land and thrive in Japan.</p>
+    </div>
+  </div>
+</section>
 
-          <!-- SET 2 — exact duplicate, hidden from screen readers -->
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/Whatnot.png" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/CAMT.png" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/CMU.png" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/KIT_logo.png" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/ICT.png" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/KIT_ICT.jpg" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/KIT_Eagle.jpg" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/KX.png" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/KMUTT.jpg" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/Startup_weekend.png" alt="" /></div>
-          <div class="partner-logo-item" aria-hidden="true"><img src="logo/MU.png" alt="" /></div>
+<!-- JOURNEY / ARCHITECTURE -->
+<section class="journey">
+  <div class="journey-inner">
+    <div class="section-header">
+      <div class="section-tag" style="color:var(--teal-light);">How We Work</div>
+      <h2 class="section-title" style="color:var(--white);">The Voera Journey</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.5);">A clear path from market intelligence to full operational transformation.</p>
+    </div>
+    <div class="journey-steps">
+      <div class="journey-step">
+        <div class="journey-step-circle">🔍</div>
+        <div class="journey-step-label">Step 01</div>
+        <div class="journey-step-title">Understand</div>
+        <p class="journey-step-desc">Market entry intelligence, customer & partner discovery, competitive and regulatory context.</p>
+      </div>
+      <div class="journey-step">
+        <div class="journey-step-circle">🛬</div>
+        <div class="journey-step-label">Step 02</div>
+        <div class="journey-step-title">Enter</div>
+        <p class="journey-step-desc">Soft landing services, local representation, business development and on-ground coordination.</p>
+      </div>
+      <div class="journey-step">
+        <div class="journey-step-circle">🏗️</div>
+        <div class="journey-step-label">Step 03</div>
+        <div class="journey-step-title">Build</div>
+        <p class="journey-step-desc">Venture studio support, research collaboration, new business and partnership development.</p>
+      </div>
+      <div class="journey-step">
+        <div class="journey-step-circle">⚡</div>
+        <div class="journey-step-label">Step 04</div>
+        <div class="journey-step-title">Transform</div>
+        <p class="journey-step-desc">DX and AI adoption, workflow improvement, and corporate innovation programs at scale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES DEEP DIVE -->
+<section class="services" id="services">
+  <div class="services-inner">
+    <div class="section-header" style="text-align:left;">
+      <div class="section-tag">Our Services</div>
+      <h2 class="section-title">Everything You Need to Win in Japan</h2>
+      <p class="section-sub" style="margin-left:0;">Explore each service area and find the package that fits exactly where you are.</p>
+    </div>
+    <div class="services-tabs">
+      <button class="stab active" onclick="showPanel('incubator',this)">Incubator</button>
+      <button class="stab" onclick="showPanel('country',this)">Country Manager</button>
+      <button class="stab" onclick="showPanel('events',this)">Events</button>
+    </div>
+
+    <!-- INCUBATOR PANEL -->
+    <div class="service-panel active" id="panel-incubator">
+      <div class="service-intro">
+        <div class="service-intro-text">
+          <h2>Incubator & Accelerator</h2>
+          <p>From the first spark of an idea to raising your Series A — our incubation programs are built for founders at every stage. We partner with students, first-time entrepreneurs, MVPs, and scaling startups. Corporates can also run internal innovation programs through our corporate venture track.</p>
+        </div>
+        <div class="service-visual-box">
+          <h4>Who This Is For</h4>
+          <ul>
+            <li>Idea-stage founders & students</li>
+            <li>First-time entrepreneurs</li>
+            <li>MVP-stage startups</li>
+            <li>Revenue / traction-stage teams</li>
+            <li>Corporates, GovTech, ClimateTech, HealthTech</li>
+          </ul>
+        </div>
+      </div>
+      <div class="packages-grid">
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--teal);"></div>
+          <div class="pkg-tier">Package 1</div>
+          <div class="pkg-name">Pre-Incubation</div>
+          <div class="pkg-target">Idea → MVP · Idea-stage founders & students</div>
+          <div class="pkg-duration">6–8 Weeks</div>
+          <ul class="pkg-list">
+            <li>Ideation & problem validation</li>
+            <li>Customer discovery workshops</li>
+            <li>Business model design</li>
+            <li>Mentor office hours</li>
+            <li>Pitch fundamentals</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--teal);"></div>
+          <div class="pkg-tier">Package 2</div>
+          <div class="pkg-name">Core Incubation</div>
+          <div class="pkg-target">MVP → Early Traction · MVP-stage startups</div>
+          <div class="pkg-duration">3–6 Months</div>
+          <ul class="pkg-list">
+            <li>Product & MVP refinement</li>
+            <li>Dedicated mentors & coaches</li>
+            <li>Market entry & GTM strategy</li>
+            <li>Legal, finance & compliance basics</li>
+            <li>Demo Day participation</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--coral);"></div>
+          <div class="pkg-tier">Package 3</div>
+          <div class="pkg-name">Accelerator</div>
+          <div class="pkg-target">Traction → Fundraising · Revenue-stage startups</div>
+          <div class="pkg-duration">3–4 Months</div>
+          <ul class="pkg-list">
+            <li>Growth strategy & metrics</li>
+            <li>Sales & partnerships</li>
+            <li>Fundraising readiness</li>
+            <li>Investor introductions</li>
+            <li>Demo Day & roadshows</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--coral);"></div>
+          <div class="pkg-tier">Package 4</div>
+          <div class="pkg-name">Corporate Venture</div>
+          <div class="pkg-target">Custom · Corporates, GovTech, ClimateTech</div>
+          <div class="pkg-duration">Custom 3–6 Months</div>
+          <ul class="pkg-list">
+            <li>Challenge definition & startup sourcing</li>
+            <li>Pilot program management</li>
+            <li>Corporate mentor engagement</li>
+            <li>Innovation reporting</li>
+            <li>Demo / showcase event</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- PROGRAMS -->
-  <section class="programs" id="programs">
-    <div class="programs-inner">
-      <div class="section-tag">Programs & services</div>
-      <h2 class="section-title">How we create impact.</h2>
-      <div class="programs-grid">
-        <div class="program-card">
-          <span class="program-tag tag-research">Research</span>
-          <h4>Innovation Consulting</h4>
-          <p>We help institutions develop innovation strategies, identify emerging opportunities, and build the frameworks needed to turn knowledge into action.</p>
+    <!-- COUNTRY MANAGER PANEL -->
+    <div class="service-panel" id="panel-country">
+      <div class="service-intro">
+        <div class="service-intro-text">
+          <h2>Country Manager Service</h2>
+          <p>We become your local arm in Japan. Whether you need to test the market, set up legally, run day-to-day operations, or own the full P&L from a distance — Voera offers a modular suite of country management services that grow with you.</p>
         </div>
-        <div class="program-card">
-          <span class="program-tag tag-venture">Venture Building</span>
-          <h4>Venture Creation Programs</h4>
-          <p>From ideation through to launch, we design and execute programs that transform research insights into new companies and technologies.</p>
+        <div class="service-visual-box">
+          <h4>Who This Is For</h4>
+          <ul>
+            <li>Early expansion & market testing</li>
+            <li>Startups ready to legally operate</li>
+            <li>Startups launching sales & partnerships</li>
+            <li>Startups without local leadership</li>
+            <li>Startups raising local or regional capital</li>
+            <li>B2B, GovTech, regulated industries</li>
+            <li>Founders staying remote</li>
+          </ul>
         </div>
-        <div class="program-card">
-          <span class="program-tag tag-corp">Corporate</span>
-          <h4>Corporate Innovation Labs</h4>
-          <p>We partner with corporations to build internal innovation capabilities, connect them with startup ecosystems, and develop new business lines.</p>
+      </div>
+      <div class="packages-grid">
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--teal);"></div>
+          <div class="pkg-tier">Package 1</div>
+          <div class="pkg-name">Market Entry Starter</div>
+          <div class="pkg-target">Early expansion · Market testing · Soft landing</div>
+          <ul class="pkg-list">
+            <li>Market research & competitor analysis</li>
+            <li>Local regulatory overview</li>
+            <li>Partner & ecosystem mapping</li>
+            <li>Customer discovery support</li>
+            <li>30–60–90 day market plan</li>
+          </ul>
         </div>
-        <div class="program-card">
-          <span class="program-tag tag-intl">International</span>
-          <h4>University Commercialization</h4>
-          <p>We support academic institutions in commercializing research outputs, connecting with industry partners, and launching spinout ventures.</p>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--teal);"></div>
+          <div class="pkg-tier">Package 2</div>
+          <div class="pkg-name">Business Setup & Compliance</div>
+          <div class="pkg-target">Startups ready to legally operate in-country</div>
+          <ul class="pkg-list">
+            <li>Entity setup coordination</li>
+            <li>Bank account & tax registration</li>
+            <li>Contract localization</li>
+            <li>Employment & payroll setup</li>
+            <li>IP & trademark guidance</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--teal);"></div>
+          <div class="pkg-tier">Package 3</div>
+          <div class="pkg-name">Go-To-Market Execution</div>
+          <div class="pkg-target">Startups launching sales & partnerships</div>
+          <ul class="pkg-list">
+            <li>Local GTM strategy execution</li>
+            <li>Sales pipeline building</li>
+            <li>Channel & partnership development</li>
+            <li>Pricing & localization support</li>
+            <li>Monthly GTM performance reports</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--coral);"></div>
+          <div class="pkg-tier">Package 4</div>
+          <div class="pkg-name">Operational Management</div>
+          <div class="pkg-target">Startups without local leadership</div>
+          <ul class="pkg-list">
+            <li>Acting Country Manager representation</li>
+            <li>Day-to-day operations oversight</li>
+            <li>Vendor & partner management</li>
+            <li>Hiring & team coordination</li>
+            <li>Monthly reporting to HQ / founders</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--coral);"></div>
+          <div class="pkg-tier">Package 5</div>
+          <div class="pkg-name">Growth & Scaling</div>
+          <div class="pkg-target">Startups gaining traction and scaling</div>
+          <ul class="pkg-list">
+            <li>Revenue scaling strategy</li>
+            <li>Strategic partnerships & enterprise sales</li>
+            <li>Government & enterprise program access</li>
+            <li>Fundraising & investor introductions</li>
+            <li>Quarterly growth reviews</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--coral);"></div>
+          <div class="pkg-tier">Package 6</div>
+          <div class="pkg-name">Fundraising & IR</div>
+          <div class="pkg-target">Startups raising local or regional capital</div>
+          <ul class="pkg-list">
+            <li>Investor landscape mapping</li>
+            <li>Pitch localization & narrative support</li>
+            <li>Investor meetings coordination</li>
+            <li>Government grant facilitation</li>
+            <li>Due diligence support</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--navy);"></div>
+          <div class="pkg-tier">Package 7</div>
+          <div class="pkg-name">Corporate & Gov Engagement</div>
+          <div class="pkg-target">B2B, GovTech, and regulated industries</div>
+          <ul class="pkg-list">
+            <li>Corporate partnership outreach</li>
+            <li>Government & regulator engagement</li>
+            <li>Pilot program facilitation</li>
+            <li>Public–private partnership support</li>
+          </ul>
+        </div>
+        <div class="pkg-card" style="border:1.5px solid var(--navy);">
+          <div class="pkg-card-accent" style="background:var(--navy);"></div>
+          <div class="pkg-tier" style="color:var(--coral);">Package 8 · PREMIUM</div>
+          <div class="pkg-name">Full Market Ownership</div>
+          <div class="pkg-target">Strategic expansion · Founders staying remote</div>
+          <ul class="pkg-list">
+            <li>End-to-end country ownership</li>
+            <li>P&L responsibility</li>
+            <li>Local hiring & leadership development</li>
+            <li>Compliance, operations, and growth</li>
+            <li>Board-level reporting</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- VISION -->
-  <section class="vision" id="vision">
-    <div class="vision-inner">
-      <div class="vision-quote">
-        "Kanazawa can become an important hub that connects <em>research, entrepreneurship,</em> and <em>international collaboration.</em>"
+    <!-- EVENTS PANEL -->
+    <div class="service-panel" id="panel-events">
+      <div class="service-intro">
+        <div class="service-intro-text">
+          <h2>Event Management</h2>
+          <p>We design and run startup events that energize ecosystems — from on-campus hackathons to national innovation summits. Our team handles every detail: concept, logistics, speakers, sponsors, and on-ground operations so your event creates real impact.</p>
+        </div>
+        <div class="service-visual-box">
+          <h4>Event Formats We Run</h4>
+          <ul>
+            <li>Ideathons & hackathons</li>
+            <li>Startup pitch days & summits</li>
+            <li>Demo Days & investor meetups</li>
+            <li>National innovation expos</li>
+            <li>Virtual & hybrid events globally</li>
+          </ul>
+        </div>
       </div>
-      <div class="vision-details">
-        <div class="vision-point">
-          <div class="vision-dot"></div>
-          <p>Connect universities, founders, corporations, and institutions to transform knowledge into new ventures and technologies.</p>
+      <div class="packages-grid">
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--teal);"></div>
+          <div class="pkg-tier">Package 1</div>
+          <div class="pkg-name">College-Level Events</div>
+          <div class="pkg-target">Colleges, universities, student founders</div>
+          <div class="pkg-duration">1–3 Days</div>
+          <ul class="pkg-list">
+            <li>Ideathons, hackathons, pitch days</li>
+            <li>Student startup outreach & registrations</li>
+            <li>Mentor & judge onboarding</li>
+            <li>Workshop & speaker coordination</li>
+            <li>End-to-end event operations</li>
+          </ul>
         </div>
-        <div class="vision-point">
-          <div class="vision-dot"></div>
-          <p>Support regional innovation ecosystems while building strong connections between Japan and global innovation networks.</p>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--teal);"></div>
+          <div class="pkg-tier">Package 2</div>
+          <div class="pkg-name">Regional Ecosystem Events</div>
+          <div class="pkg-target">City / state ecosystems, regional accelerators</div>
+          <div class="pkg-duration">1–2 Days</div>
+          <ul class="pkg-list">
+            <li>Startup summits & investor meetups</li>
+            <li>Investor, mentor & partner engagement</li>
+            <li>Sponsorship acquisition support</li>
+            <li>Media & PR coordination</li>
+            <li>Investor & partner engagement report</li>
+          </ul>
         </div>
-        <div class="vision-point">
-          <div class="vision-dot"></div>
-          <p>Become a platform for collaborative venture creation that emerges from research — creating companies, technologies, and lasting partnerships.</p>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--coral);"></div>
+          <div class="pkg-tier">Package 3</div>
+          <div class="pkg-name">National-Scale Events</div>
+          <div class="pkg-target">Government bodies, corporates, national ecosystems</div>
+          <div class="pkg-duration">2–4 Days</div>
+          <ul class="pkg-list">
+            <li>National-level strategy & positioning</li>
+            <li>Large-scale sponsorship sales</li>
+            <li>High-profile speaker & VIP management</li>
+            <li>Media partnerships & PR</li>
+            <li>Government / corporate impact report</li>
+          </ul>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-card-accent" style="background:var(--navy);"></div>
+          <div class="pkg-tier">Package 4</div>
+          <div class="pkg-name">Hybrid / Virtual Events</div>
+          <div class="pkg-target">Global or remote participation</div>
+          <div class="pkg-duration">1–3 Days</div>
+          <ul class="pkg-list">
+            <li>Virtual platform setup & management</li>
+            <li>Global startup & mentor onboarding</li>
+            <li>Live streaming & recordings</li>
+            <li>Online networking facilitation</li>
+            <li>Engagement analytics & reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JAPAN CONTEXT -->
+<section class="japan-ctx" id="japan">
+  <div class="japan-inner">
+    <div>
+      <div class="section-tag">Japan Advantage</div>
+      <h2 class="section-title">Why Japan?<br>Why Voera?</h2>
+      <p class="section-sub" style="margin-left:0;margin-top:0.75rem;">Japan is one of the world's most rewarding markets — but only for those who know how to navigate it.</p>
+      <div class="japan-cols">
+        <div class="jcol">
+          <h4>Market Friction</h4>
+          <ul>
+            <li>Language & cultural barriers</li>
+            <li>Relationship-based sales cycles</li>
+            <li>Local trust & credibility requirements</li>
+            <li>Slow but structured decision-making</li>
+          </ul>
+        </div>
+        <div class="jcol">
+          <h4>What Clients Need</h4>
+          <ul>
+            <li>Reliable local representation</li>
+            <li>Partner & customer access</li>
+            <li>Product & comms localization</li>
+            <li>Ongoing coordination inside Japan</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- TEAM -->
-  <!-- Place team photos in a folder called "team/" next to index.html.
-       Update each src, alt, name, and LinkedIn href for each member. -->
-  <section class="team" id="team">
-    <div class="team-inner">
-      <div class="section-tag">Our team</div>
-      <h2 class="section-title">The people behind Voera.</h2>
-      <div class="team-grid">
- 
-        <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="team/Tossa.png" alt="Co-Founder & CEO" class="team-photo" />
-            <a href="https://linkedin.com/in/YOURHANDLE" target="_blank" rel="noopener" class="team-linkedin" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
-          <div class="team-info">
-            <h4 class="team-name">Tossa Mebusaya</h4>
-            <p class="team-role">Co-Founder & CEO</p>
+    <div>
+      <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:1.25rem;letter-spacing:-0.3px;">The Voera Advantage</h3>
+      <div class="japan-adv">
+        <div class="japan-adv-item">
+          <div class="pillar-num">01</div>
+          <div>
+            <div class="japan-adv-title">Japan-Based Venture Studio</div>
+            <p class="japan-adv-desc">Permanently rooted in Japan with a Kanazawa presence — not a remote advisory firm.</p>
           </div>
         </div>
- 
-        <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="team/Matas.png" alt="Co-Founder & CGO" class="team-photo" />
-            <a href="https://linkedin.com/in/YOURHANDLE" target="_blank" rel="noopener" class="team-linkedin" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
-          <div class="team-info">
-            <h4 class="team-name">Matas Danielevicius</h4>
-            <p class="team-role">Co-Founder & CGO</p>
+        <div class="japan-adv-item">
+          <div class="pillar-num">02</div>
+          <div>
+            <div class="japan-adv-title">Research-Backed Network</div>
+            <p class="japan-adv-desc">KIT / ICT research connections give us access to academic talent and innovation pipelines.</p>
           </div>
         </div>
- 
-        <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="team/Jane.png" alt="COO" class="team-photo" />
-            <a href="https://linkedin.com/in/YOURHANDLE" target="_blank" rel="noopener" class="team-linkedin" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
-          <div class="team-info">
-            <h4 class="team-name">Rattiya (Jane) Mebusaya</h4>
-            <p class="team-role">COO</p>
+        <div class="japan-adv-item">
+          <div class="pillar-num">03</div>
+          <div>
+            <div class="japan-adv-title">Expert Operator Network</div>
+            <p class="japan-adv-desc">Ability to coordinate seasoned experts, legal professionals, and operators on demand.</p>
           </div>
         </div>
- 
-        <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="team/Rikichi.png" alt="Adviser" class="team-photo" />
-            <a href="https://linkedin.com/in/YOURHANDLE" target="_blank" rel="noopener" class="team-linkedin" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
-          <div class="team-info">
-            <h4 class="team-name">Rikichi Izumiya</h4>
-            <p class="team-role">Adviser</p>
+        <div class="japan-adv-item">
+          <div class="pillar-num">04</div>
+          <div>
+            <div class="japan-adv-title">Two-Way Bridge</div>
+            <p class="japan-adv-desc">Serving overseas startups entering Japan and Japanese companies expanding globally or driving DX.</p>
           </div>
         </div>
- 
-        <div class="team-card">
-          <div class="team-photo-wrap">
-            <img src="team/Ichika.jpg" alt="Junior Associate" class="team-photo" />
-            <a href="https://linkedin.com/in/YOURHANDLE" target="_blank" rel="noopener" class="team-linkedin" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
-          <div class="team-info">
-            <h4 class="team-name">Issada (Ichika) Pracharktam</h4>
-            <p class="team-role">Junior Associate</p>
-          </div>
-        </div>
- 
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
- 
-      
+<!-- SUMMER + OTHERS -->
+<section class="extras">
+  <div class="extras-inner">
+    <div class="section-header">
+      <div class="section-tag" style="color:var(--teal-light);">Additional Offerings</div>
+      <h2 class="section-title">Summer Programs & Support Services</h2>
+      <p class="section-sub">Everything else you need to land, thrive, and grow in Japan.</p>
+    </div>
+    <div class="extras-grid">
+      <div class="extra-card">
+        <div class="extra-card-title">Summer Program</div>
+        <div class="extra-card-sub">Immersive seasonal programs for students, early-stage founders, and international participants exploring Japan's startup scene. Hands-on, intensive, and deeply connected to the local ecosystem.</div>
+        <div class="extra-tags">
+          <span class="extra-tag">Startup Immersion</span>
+          <span class="extra-tag">Student-Focused</span>
+          <span class="extra-tag">International</span>
+          <span class="extra-tag">Mentorship</span>
+        </div>
+      </div>
+      <div class="extra-card">
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="contact-inner">
-      <div class="section-tag">Get involved</div>
-      <h2 class="contact-title">Let's build<br>something together.</h2>
-      <p class="contact-sub">Whether you're a university, corporation, or entrepreneur — if you're working on something where research meets opportunity, we'd like to hear from you.</p>
-      <div class="contact-actions">
-        <a href="mailto:contact@voera.co" class="btn-contact-primary">Say hello</a>
-        <a href="#about" class="btn-contact-secondary">Learn more</a>
+        <div class="extra-card-title">Support Services</div>
+        <div class="extra-card-sub">The practical backbone every founder needs when relocating or operating in Japan. We handle the logistics so you can focus on building.</div>
+        <div class="extra-tags">
+          <span class="extra-tag coral">Localization</span>
+          <span class="extra-tag coral">Legal Arrangement</span>
+          <span class="extra-tag coral">Housing & Living</span>
+          <span class="extra-tag coral">Formality Setup</span>
+          <span class="extra-tag coral">Recruitment</span>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <a href="#">
-      <img src="logo/white_no_bg.png" alt="Voera" height="110" style="display: block;" />
-    </a>
-    <ul class="footer-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#cycle">Model</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <span class="footer-copy">© 2025 Voera — Kanazawa, Japan</span>
-  </footer>
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="team-inner">
+    <div class="section-header">
+      <div class="section-tag">The Team</div>
+      <h2 class="section-title">People Behind Voera</h2>
+      <p class="section-sub">Operators, connectors, and builders who've been in the trenches.</p>
+    </div>
+    <div class="team-grid">
+      <!-- Example team member — duplicate and update as needed -->
+      <div class="team-card">
+        <div class="team-avatar">VN</div>
+        <div class="team-name">Voera Name</div>
+        <div class="team-role">Founder & CEO</div>
+        <p class="team-bio">Venture builder and Japan ecosystem connector with experience across incubation, market entry, and corporate innovation programs.</p>
+        <a href="https://linkedin.com" target="_blank" class="team-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--teal),var(--teal-light));">TM</div>
+        <div class="team-name">Team Member</div>
+        <div class="team-role">Head of Country Operations</div>
+        <p class="team-bio">Expert in Japan market entry with a track record of helping foreign startups establish and scale their local presence.</p>
+        <a href="https://linkedin.com" target="_blank" class="team-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--coral),var(--coral-light));">TM</div>
+        <div class="team-name">Team Member</div>
+        <div class="team-role">Incubation Lead</div>
+        <p class="team-bio">Serial entrepreneur and mentor who has guided dozens of early-stage founders through validation, product development, and fundraising.</p>
+        <a href="https://linkedin.com" target="_blank" class="team-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <div class="team-card team-add">
+        <div class="team-add-icon">+</div>
+        <div style="font-family:var(--font-display);font-weight:700;color:var(--gray-text);font-size:0.9rem;">Your Name Here</div>
+        <div style="font-size:0.75rem;color:var(--gray-mid);">Role · LinkedIn</div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- PARTNERS -->
+<section class="partners" id="partners">
+  <div class="partners-inner">
+    <div class="section-header">
+      <div class="section-tag">Ecosystem</div>
+      <h2 class="section-title">Partners & Network</h2>
+      <p class="section-sub">Trusted by organizations across Japan's innovation ecosystem.</p>
+    </div>
+    <div class="partners-track-wrap">
+      <div class="partners-track" id="ptrack">
+        <div class="partner-logo"><img src="logo/Whatnot.png" alt="Whatnot" /></div>
+        <div class="partner-logo"><img src="logo/CAMT.png" alt="CAMT" /></div>
+        <div class="partner-logo"><img src="logo/CMU.png" alt="CMU" /></div>
+        <div class="partner-logo"><img src="logo/KIT_logo.png" alt="KIT_logo" /></div>
+        <div class="partner-logo"><img src="logo/ICT.png" alt="ICT" /></div>
+        <div class="partner-logo"><img src="logo/KIT_ICT.jpg" alt="KIT_ICT" /></div>
+        <div class="partner-logo"><img src="logo/KIT_Eagle.jpg" alt="KIT_Eagle" /></div>
+        <div class="partner-logo"><img src="logo/KX.png" alt="KX" /></div>
+        <div class="partner-logo"><img src="logo/KMUTT.jpg" alt="KMUTT" /></div>
+        <div class="partner-logo"><img src="logo/Startup_weekend.png" alt="Startup_weekend" /></div>
+        <div class="partner-logo"><img src="logo/MU.png" alt="MU" /></div>
+        <!-- Duplicated for seamless loop -->
+        <div class="partner-logo"><img src="logo/Whatnot.png" alt="Whatnot" /></div>
+        <div class="partner-logo"><img src="logo/CAMT.png" alt="CAMT" /></div>
+        <div class="partner-logo"><img src="logo/CMU.png" alt="CMU" /></div>
+        <div class="partner-logo"><img src="logo/KIT_logo.png" alt="KIT_logo" /></div>
+        <div class="partner-logo"><img src="logo/ICT.png" alt="ICT" /></div>
+        <div class="partner-logo"><img src="logo/KIT_ICT.jpg" alt="KIT_ICT" /></div>
+        <div class="partner-logo"><img src="logo/KIT_Eagle.jpg" alt="KIT_Eagle" /></div>
+        <div class="partner-logo"><img src="logo/KX.png" alt="KX" /></div>
+        <div class="partner-logo"><img src="logo/KMUTT.jpg" alt="KMUTT" /></div>
+        <div class="partner-logo"><img src="logo/Startup_weekend.png" alt="Startup_weekend" /></div>
+        <div class="partner-logo"><img src="logo/MU.png" alt="MU" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="section-tag" style="color:var(--coral-light);">Get in Touch</div>
+    <h2 class="section-title" style="margin-bottom:0.75rem;">Ready to Build<br>Something in Japan?</h2>
+    <p class="section-sub">Whether you're a founder, corporate, or institution — let's talk about what's next.</p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="contact-card-label">Based In</div>
+        <div class="contact-card-value">Kanazawa, Japan<br><span style="opacity:0.5;font-size:0.78rem;">Ishikawa Prefecture</span></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-label">Email Us</div>
+        <div class="contact-card-value">contact@voera.co<br><span style="opacity:0.5;font-size:0.78rem;">We respond within 24 hrs</span></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-label">Serving</div>
+        <div class="contact-card-value">Japan Domestic & International<br><span style="opacity:0.5;font-size:0.78rem;">Two-way market bridge</span></div>
+      </div>
+    </div>
+    <div class="contact-ctas">
+      <a href="mailto:contact@voera.co" class="btn-primary">Send Us an Email</a>
+      <a href="#services" class="btn-ghost">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#">
+    <img src="logo/white_no_bg.png" alt="Voera" height="110" style="display: block;" />
+  </a>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#japan">Japan</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">© 2025 Voera. All rights reserved.</div>
+</footer>
+
+<script>
+function showPanel(id, btn) {
+  document.querySelectorAll('.service-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.stab').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+document.getElementById('burger').addEventListener('click', function() {
+  const nl = document.getElementById('nav-links');
+  nl.classList.toggle('open');
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.pillar-card, .pkg-card, .journey-step, .team-card, .extra-card, .japan-adv-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+</script>
 </body>
 </html>
