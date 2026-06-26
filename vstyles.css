@@ -69,18 +69,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:0 5%;display:flex;al
 .map-badge-sub{font-size:0.68rem;color:rgba(255,255,255,0.45);line-height:1.4;}
 /* Dashed connector lines from badges to map center */
 .japan-map-container::before,.japan-map-container::after{display:none;}
-
+/* Constrain the whole visual so it doesn't stretch infinitely */
+.japan-map-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;        /* cap the growth */
+  margin: 0 auto;          /* center it on wider screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Floating parallax images around the map */
 .float-img{position:absolute;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.4),0 2px 8px rgba(0,0,0,0.3);will-change:transform;transition:transform 0.08s linear;}
 .float-img img{width:100%;height:100%;object-fit:cover;display:block;}
-.float-img-1{width:200px;height:150px;top:-20px;left:-60px;}
-.float-img-2{width:150px;height:100px;top:0px;right:-80px;}
-.float-img-3{width:200px;height:120px;bottom:5px;left:-140px;}
-.float-img-4{width:170px;height:120px;bottom:-30px;right:150px;}
-.float-img-5{width:180px;height:130px;top:15%;left:160px;}
-.float-img-6{width:100px;height:140px;top:20%;right:20px;}
-.float-img-7{width:110px;height:90px;top:60%;left:20px;}
-.float-img-8{width:150px;height:100px;top:55%;right:-30px;}
+/* Keep floating images pinned proportionally using percentages */
+.float-img-1 { width: 200px; height: 150px; top: -20px;  left: -5%;  }
+.float-img-2 { width: 150px; height: 100px; top: 0px;    right: -10%; }
+.float-img-3 { width: 200px; height: 120px; bottom: 5px; left: -15%;  }
+.float-img-4 { width: 170px; height: 120px; bottom: -30px; right: 15%; }
+.float-img-5 { width: 180px; height: 130px; top: 15%;   left: 18%;  }
+.float-img-6 { width: 100px; height: 140px; top: 20%;   right: 2%;  }
+.float-img-7 { width: 110px; height: 90px;  top: 60%;   left: 10%;   }
+.float-img-8 { width: 150px; height: 100px; top: 55%;   right: -3%; }
 .float-img-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,44,84,0.25),transparent);border-radius:inherit;}
  
 /* SHARED SECTION HEADER */
@@ -128,7 +138,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:0 5%;display:flex;al
  
 /* Shared face styles */
 .flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:2.5rem;}
- 
+/* .flip-front { z-index: 1; }
+.flip-back  { z-index: 2; }  */
+.flip-front, .flip-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none; /* disable all by default */
+}
+.flip-card.flipped .flip-back {
+  pointer-events: auto; /* only re-enable the visible face */
+}
+.flip-card:not(.flipped) .flip-front {
+  pointer-events: auto;
+}
 /* FRONT */
 .flip-front{display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;}
 .flip-front-bg{position:absolute;inset:0;border-radius:16px;background-size:cover;background-position:center;z-index:0;transition:transform 0.6s ease;}
@@ -156,7 +178,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:0 5%;display:flex;al
 .flip-back-reset:hover{color:var(--navy);}
 .flip-back-reset::before{content:'↺';font-size:0.85rem;}
 .flip-back-cta{display:inline-flex;align-items:center;gap:0.5rem;background:var(--navy);color:var(--white);padding:0.55rem 1.25rem;border-radius:6px;font-size:0.8rem;font-weight:600;text-decoration:none;font-family:var(--font-body);transition:background 0.2s;}
-.flip-back-cta:hover{background:var(--coral);}
+.flip-back-cta:hover{background:rgb(50, 77, 152);}
 .flip-back-cta.coral-cta{background:var(--coral);}
 .flip-back-cta.coral-cta:hover{background:var(--coral-light);}
 .flip-back-cta::after{content:'→';}

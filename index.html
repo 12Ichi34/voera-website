@@ -526,7 +526,7 @@
         <div class="team-info">
           <div class="team-name">Issada (Ichika) Pracharktam</div>
           <div class="team-role">Junior Associate</div>
-          <p class="team-bio">Thai-Japanese young talent driven to bridge Japan to the world, bringing cross-cultural understanding and fresh perspectives.</p>
+          <p class="team-bio">Thai-Japanese talent driven to bridge Japan to the world, bringing cross-cultural understanding and new opportunities discovered through data.</p>
         </div>
       </div>
     </div>
@@ -667,6 +667,9 @@ document.querySelectorAll('.srow').forEach(row => {
   srowObserver.observe(row);
 });
  
+document.querySelectorAll('.flip-back').forEach(back => {
+  back.addEventListener('click', e => e.stopPropagation());
+});
 
 // Scroll reveal
 const observer = new IntersectionObserver((entries) => {
