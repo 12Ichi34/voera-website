@@ -195,14 +195,32 @@
     <div class="japan-why-text">
       <div class="japan-why-tag">The Opportunity</div>
       <h2 class="japan-why-title">Why <em>Japan?</em></h2>
-      <p class="japan-why-body">Japan is entering a transformative moment in its innovation landscape, driven by strong government support for startups, universities accelerating research commercialisation, and major corporations actively seeking external innovation partners. At the same time, regional cities are emerging as vibrant innovation hubs, attracting global attention and investment.<br><br>Despite Japan's world‑class research capabilities, the number of research‑based startups remains relatively low — creating a unique opportunity for organisations that can bridge academia, industry, and entrepreneurship.</p>
-    </div>
-    <div class="japan-why-img">
-      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&q=80" alt="Japan city innovation"/>
-      <div class="japan-why-img-overlay"></div>
+ 
+      <div class="japan-stats">
+ 
+        <div class="japan-stat" style="margin-left:0rem;">
+          <div class="japan-stat-num">10<span class="japan-stat-unit">×</span></div>
+          <p class="japan-stat-desc"><strong>10 times growth in investment in a decade</strong>Total startup investment surged from ¥877B in 2013 to ¥8.77T in 2022 — strong momentum backed by government commitment to building a startup nation.</p>
+        </div>
+ 
+        <div class="japan-stat" style="margin-left:0rem;">
+          <div class="japan-stat-num coral">#10</div>
+          <p class="japan-stat-desc"><strong>Tokyo in the global top 10</strong>Up five places from #15 to #10 in GSER 2023 — the most significant single-year jump among all top-tier ecosystems worldwide.</p>
+        </div>
+ 
+        <div class="japan-stat" style="margin-left:0rem;">
+          <div class="japan-stat-num">5M<span class="japan-stat-unit">+</span></div>
+          <p class="japan-stat-desc"><strong>SMEs hungry for transformation</strong>Over 5 million businesses across Japan are actively seeking DX partners — a massive, underserved market for well-positioned startups.</p>
+        </div>
+ 
+        <div class="japan-stat" style="margin-left:0rem;">
+          <div class="japan-stat-num coral">¥100<span class="japan-stat-unit">B</span></div>
+          <p class="japan-stat-desc"><strong>Government-backed startup fund</strong>Part of Japan's 5-year plan to cultivate 100,000 new startups by 2027 — a rare window of institutional support and capital.</p>
+        </div>
+ 
+      </div>
     </div>
   </div>
- 
   <!-- Part 2: Why Voera? -->
   <div class="japan-voera">
     <div class="japan-voera-inner">
@@ -476,7 +494,7 @@
       <p class="section-sub">Operators, connectors, and builders who've been in the trenches.</p>
     </div>
     <div class="team-grid">
-      <!-- Team card — replace src with actual photo -->
+      <!-- Team card  -->
       <div class="team-card">
         <img src="team/Tossa.png" alt="Co-Founder & CEO"/>
         <div class="team-overlay"></div>
@@ -670,6 +688,19 @@ document.querySelectorAll('.srow').forEach(row => {
 document.querySelectorAll('.flip-back').forEach(back => {
   back.addEventListener('click', e => e.stopPropagation());
 });
+ 
+
+// Japan stats — each stat observed individually, slow stagger
+const statObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), 120);
+      statObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.japan-stat').forEach(stat => statObserver.observe(stat));
+
 
 // Scroll reveal
 const observer = new IntersectionObserver((entries) => {
@@ -681,7 +712,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.pillar-card, .pkg-card, .journey-step, .team-card, .extra-card, .japan-adv-item').forEach(el => {
+document.querySelectorAll('.team-card, .extra-card, .japan-adv-item').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(20px)';
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
